@@ -1,0 +1,17 @@
+.alb-content{
+  background-image: url(../images/fondo-login.jpg);
+}
+
+.alb-login{
+  width: 90%;
+  padding: 15px;
+  margin:45% auto 25px auto;
+  border-radius:5px;  
+  background: white;
+}
+
+.btn-ingresar{
+  border-radius: 25px;
+  height: 40px;
+  background-color: #9d62c8;
+}
