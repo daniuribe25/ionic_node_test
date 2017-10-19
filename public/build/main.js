@@ -201,7 +201,7 @@ var Reviews = (function () {
             return Promise.resolve(this.data);
         }
         return new Promise(function (resolve) {
-            _this.http.get('http://localhost:8080/api/reviews')
+            _this.http.get('http://ec2-34-226-83-226.compute-1.amazonaws.com/api/reviews')
                 .map(function (res) { return res.json(); })
                 .subscribe(function (data) {
                 _this.data = data;
@@ -213,13 +213,13 @@ var Reviews = (function () {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
         headers.append('Content-Type', 'application/json');
         console.log(review);
-        this.http.post('http://localhost:8080/api/reviews', JSON.stringify(review), { headers: headers })
+        this.http.post('http://ec2-34-226-83-226.compute-1.amazonaws.com/api/reviews', JSON.stringify(review), { headers: headers })
             .subscribe(function (res) {
             console.log(res.json());
         });
     };
     Reviews.prototype.deleteReview = function (reviewId) {
-        this.http.delete('http://localhost:8080/api/reviews/' + reviewId).subscribe(function (res) {
+        this.http.delete('http://ec2-34-226-83-226.compute-1.amazonaws.com/api/reviews/' + reviewId).subscribe(function (res) {
             console.log('se ha eliminado el review ' + res.json());
         });
     };
