@@ -5,8 +5,8 @@ var morgan = require('morgan');             // log requests to the console (expr
 var bodyParser = require('body-parser');    // pull information from HTML POST (express4)
 var methodOverride = require('method-override'); // simulate DELETE and PUT (express4)
 var cors = require('cors');
-const sqlite3 = require('sqlite3').verbose();
-var db = new sqlite3.Database('reviewking.db');
+// const sqlite3 = require('sqlite3').verbose();
+// var db = new sqlite3.Database('reviewking.db');
  
 app.use(morgan('dev'));                                         // log every request to the console
 app.use(bodyParser.urlencoded({'extended':'true'}));            // parse application/x-www-form-urlencoded
@@ -22,66 +22,71 @@ app.use(function(req, res, next) {
    next();
 });
  
-
 app.use(express.static(__dirname + '/public'));
+var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
+
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+
+
+
+// app.use(express.static(__dirname + '/public'));
 
 app.get('/',function(req,res){
 
-console.log('hello from server');
-
- res.render('./public/index.html');
-
+    console.log('hello from server');
+    res.sendFile('index.html');
 });
 // Routes
  
-    // Get reviews
-    app.get('/api/reviews', function(req, res) {
+    // // Get reviews
+    // app.get('/api/reviews', function(req, res) {
  
-        console.log("cargando..");
- 		var reviews = [];
+    //     console.log("cargando..");
+ 	// 	var reviews = [];
 
-		 let sql = 'SELECT * FROM review ORDER BY title';
+	// 	 let sql = 'SELECT * FROM review ORDER BY title';
 
-		  db.all(sql, [], (err, rows) => {
-            if (err) {
-			    throw err;
-              }
-              reviews = rows;
-              res.json(reviews);
-        });
+	// 	  db.all(sql, [], (err, rows) => {
+    //         if (err) {
+	// 		    throw err;
+    //           }
+    //           reviews = rows;
+    //           res.json(reviews);
+    //     });
 
-    });
+    // });
  
-    // create review and send back all reviews after creation
-    app.post('/api/reviews', function(req, res) {
+    // // create review and send back all reviews after creation
+    // app.post('/api/reviews', function(req, res) {
  
-        console.log("creating review");
-        let sql = 'INSERT INTO review(title,description,rating) VALUES(?,?,?)';
+    //     console.log("creating review");
+    //     let sql = 'INSERT INTO review(title,description,rating) VALUES(?,?,?)';
 
-        db.run(sql, [req.body.title,req.body.description,req.body.rating], function(err) {
-            if (err) {
-              return console.log(err.message);
-            }
-            // get the last insert id
-            console.log(`A row has been inserted with rowid ${this.lastID}`);
-            res.json(req.body);
-          });
-    });
+    //     db.run(sql, [req.body.title,req.body.description,req.body.rating], function(err) {
+    //         if (err) {
+    //           return console.log(err.message);
+    //         }
+    //         // get the last insert id
+    //         console.log(`A row has been inserted with rowid ${this.lastID}`);
+    //         res.json(req.body);
+    //       });
+    // });
  
-    // delete a review
-    app.delete('/api/reviews/:review_id', function(req, res) {
-        let sql = 'DELETE FROM review WHERE id=?';
-        console.log(req.params.review_id);
-        db.run(sql, req.params.review_id, function(err) {
-            if (err) {
-              return console.error(err.message);
-            }
-            console.log(`Row(s) deleted ${this.changes}`);
-          });
-        res.json(req.params.review_id);
-    });
+    // // delete a review
+    // app.delete('/api/reviews/:review_id', function(req, res) {
+    //     let sql = 'DELETE FROM review WHERE id=?';
+    //     console.log(req.params.review_id);
+    //     db.run(sql, req.params.review_id, function(err) {
+    //         if (err) {
+    //           return console.error(err.message);
+    //         }
+    //         console.log(`Row(s) deleted ${this.changes}`);
+    //       });
+    //     res.json(req.params.review_id);
+    // });
  
  
 // listen (start app with node server.js) ======================================
-app.listen(8080);
-console.log("App listening on port 8080");
+app.listen(server_port,server_ip_address,function(){
+    console.log("App listening on port 8080");
+});
