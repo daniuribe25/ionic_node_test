@@ -42,10 +42,10 @@ app.get('/prueba',function(req,res){
 // Routes
  
     // Get reviews
-    app.get('/api/reviews', function(req, res) {
+     app.get('/api/reviews', function(req, res) {
  
         console.log("cargando..");
- 		var reviews = "Daniel uribe Londoño";
+ 		var reviews = [{'title':'Daniel uribe'}];
 
 		//  var sql = 'SELECT * FROM review ORDER BY title';
 
