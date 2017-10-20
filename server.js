@@ -31,6 +31,14 @@ app.get('/',function(req,res){
     console.log('hello from server');
     res.sendFile('index.html');
 });
+
+app.get('/prueba',function(req,res){
+    
+        console.log('hello from server');
+        res.sendFile('prueba.html');
+    });
+
+
 // Routes
  
     // Get reviews
