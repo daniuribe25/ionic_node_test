@@ -204,6 +204,7 @@ var Reviews = (function () {
             _this.http.get('http://ec2-34-226-83-226.compute-1.amazonaws.com/api/reviews')
                 .map(function (res) { return res.json(); })
                 .subscribe(function (data) {
+		    alert(data);
                 _this.data = data;
                 resolve(_this.data);
             });
