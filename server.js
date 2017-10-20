@@ -45,18 +45,18 @@ app.get('/prueba',function(req,res){
     app.get('/api/reviews', function(req, res) {
  
         console.log("cargando..");
- 		var reviews = [];
+ 		var reviews = "Daniel uribe Londoño";
 
-		 let sql = 'SELECT * FROM review ORDER BY title';
+		//  var sql = 'SELECT * FROM review ORDER BY title';
 
-		  db.all(sql, [], (err, rows) => {
-            if (err) {
-			    throw err;
-              }
-              reviews = rows;
-              res.json(reviews);
-        });
-
+		//   db.all(sql, [], (err, rows) => {
+        //     if (err) {
+		// 	    throw err;
+        //       }
+        //       reviews = rows;
+        //       res.json(reviews);
+        // });
+        res.json(reviews);
     });
  
     // create review and send back all reviews after creation
@@ -95,4 +95,3 @@ app.get('/prueba',function(req,res){
 // });
 app.listen(8080);
 console.log("App listening on port 8080");
-
