@@ -56,7 +56,7 @@ app.get('/prueba',function(req,res){
         //       reviews = rows;
         //       res.json(reviews);
         // });
-        return res.json(reviews);
+        // return res.json(reviews);
     });
  
     // create review and send back all reviews after creation
