@@ -60,33 +60,33 @@ app.get('/prueba',function(req,res){
     });
  
     // create review and send back all reviews after creation
-    app.post('/api/reviews', function(req, res) {
+     //app.post('/api/reviews', function(req, res) {
  
-        console.log("creating review");
-        let sql = 'INSERT INTO review(title,description,rating) VALUES(?,?,?)';
+    //     console.log("creating review");
+    //     let sql = 'INSERT INTO review(title,description,rating) VALUES(?,?,?)';
 
-        db.run(sql, [req.body.title,req.body.description,req.body.rating], function(err) {
-            if (err) {
-              return console.log(err.message);
-            }
-            // get the last insert id
-            console.log(`A row has been inserted with rowid ${this.lastID}`);
-            res.json(req.body);
-          });
-    });
+    //     db.run(sql, [req.body.title,req.body.description,req.body.rating], function(err) {
+    //         if (err) {
+    //           return console.log(err.message);
+    //         }
+    //         // get the last insert id
+    //         console.log(`A row has been inserted with rowid ${this.lastID}`);
+    //         res.json(req.body);
+    //       });
+    // });
  
-    // delete a review
-    app.delete('/api/reviews/:review_id', function(req, res) {
-        let sql = 'DELETE FROM review WHERE id=?';
-        console.log(req.params.review_id);
-        db.run(sql, req.params.review_id, function(err) {
-            if (err) {
-              return console.error(err.message);
-            }
-            console.log(`Row(s) deleted ${this.changes}`);
-          });
-        res.json(req.params.review_id);
-    });
+    // // delete a review
+    // app.delete('/api/reviews/:review_id', function(req, res) {
+    //     let sql = 'DELETE FROM review WHERE id=?';
+    //     console.log(req.params.review_id);
+    //     db.run(sql, req.params.review_id, function(err) {
+    //         if (err) {
+    //           return console.error(err.message);
+    //         }
+    //         console.log(`Row(s) deleted ${this.changes}`);
+    //       });
+    //     res.json(req.params.review_id);
+    // });
  
  
 // listen (start app with node server.js) ======================================
