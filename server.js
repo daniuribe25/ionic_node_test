@@ -45,7 +45,7 @@ app.get('/prueba',function(req,res){
      app.get('/reviews', function(req, res) {
  
         console.log("cargando..");
- 		//var reviews = [{'title':'Daniel uribe'}];
+ 		var reviews = [{'title':'Daniel uribe'}];
 
 		//  var sql = 'SELECT * FROM review ORDER BY title';
 
@@ -56,7 +56,7 @@ app.get('/prueba',function(req,res){
         //       reviews = rows;
         //       res.json(reviews);
         // });
-        // return res.json(reviews);
+         return res.json(reviews);
     });
  
     // create review and send back all reviews after creation
