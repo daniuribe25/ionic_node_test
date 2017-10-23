@@ -80,17 +80,17 @@ app.get('/pruebaq',function(req,res){
     });
  
     // delete a review
-    app.delete('/api/reviews/:review_id', function(req, res) {
-        let sql = 'DELETE FROM review WHERE id=?';
-        console.log(req.params.review_id);
-        db.run(sql, req.params.review_id, function(err) {
-            if (err) {
-              return console.error(err.message);
-            }
-            console.log(`Row(s) deleted ${this.changes}`);
-          });
-        res.json(req.params.review_id);
-    });
+      // app.delete('/api/reviews/:review_id', function(req, res) {
+    //     let sql = 'DELETE FROM review WHERE id=?';
+    //     console.log(req.params.review_id);
+    //     db.run(sql, req.params.review_id, function(err) {
+    //         if (err) {
+    //           return console.error(err.message);
+    //         }
+    //         console.log(`Row(s) deleted ${this.changes}`);
+    //       });
+    //     res.json(req.params.review_id);
+    // });
  
  
 // listen (start app with node server.js) ======================================
