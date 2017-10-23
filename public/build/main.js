@@ -200,7 +200,7 @@ var Reviews = (function () {
             return Promise.resolve(this.data);
         }
         return new Promise(function (resolve) {
-            _this.http.get('https://ionicnode-final.herokuapp.com/api/reviews')
+            _this.http.get('https://ionicnode-final.herokuapp.com/pruebaz')
                 .map(function (res) { return res.json(); })
                 .subscribe(function (data) {
                 alert(data);
