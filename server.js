@@ -43,21 +43,7 @@ app.get('/pruebaq',function(req,res){
  
     // Get reviews
      app.get('/pruebaz', function(req, res) {
- 
-        console.log("cargando..");
- 		var reviews = [{'title':'Daniel uribe'}];
-
-		//  var sql = 'SELECT * FROM review ORDER BY title';
-
-		//   db.all(sql, [], (err, rows) => {
-        //     if (err) {
-		// 	    throw err;
-        //       }
-        //       reviews = rows;
-        //       res.json(reviews);
-        // });
 	     res.sendFile('prueba.html');
-         //res.json(reviews);
     });
 
 	 app.get('/api/reviews', function(req, res) {
