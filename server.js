@@ -43,7 +43,7 @@ app.get('/pruebaq',function(req,res){
  
     // Get reviews
      app.get('/pruebaz', function(req, res) {
-	     res.sendFile('prueba.html');
+	     res.json("");
     });
 
 	 app.get('/api/reviews', function(req, res) {
