@@ -23,28 +23,19 @@ app.use(function(req, res, next) {
 });
  
 app.use(express.static(__dirname + '/public'));
-var server_port = process.env.PORT || 8080;
+var server_port = process.env.PORT || 5000;
 
 
 app.get('/',function(req,res){
-
-    console.log('hello from server');
     res.sendFile('index.html');
 });
 
 // Routes
- 
-    // Get reviews
-     app.get('/pruebaz', function(req, res) {
-	     var reviews = [{'title':'Daniel uribe'}];
-	     res.json(reviews);
-    });
 
+    //get the reviews
 	 app.get('/api/reviews', function(req, res) {
  
         console.log("cargando..");
- 		var reviews = [{'title':'Daniel uribe'},{'title':'Cantinflas londono'}];
-
 		 var sql = 'SELECT * FROM review ORDER BY title';
 		  db.all(sql, [], (err, rows) => {
             		if (err) {
@@ -53,13 +44,10 @@ app.get('/',function(req,res){
               reviews = rows;
               res.json(reviews);
         });
-         //res.json(reviews);
     });
  
    // create review and send back all reviews after creation
      app.post('/api/reviews', function(req, res) {
- 
-        console.log("creating review");
         var sql = 'INSERT INTO review(title,description,rating) VALUES(?,?,?)';
 
         db.run(sql, [req.body.title,req.body.description,req.body.rating], function(err) {
@@ -86,9 +74,4 @@ app.get('/',function(req,res){
     });
  
  
-// listen (start app with node server.js) ======================================
-// app.listen(server_port,function(){
-//     console.log("App listening on port 8080");
-// });
-app.listen(process.env.PORT || 5000);
-console.log("App listening on port 8080");
+app.listen(server_port);
