@@ -42,7 +42,7 @@ app.get('/prueba',function(req,res){
 // Routes
  
     // Get reviews
-     app.get('/api/reviews', function(req, res) {
+     app.get('/reviews', function(req, res) {
  
         console.log("cargando..");
  		//var reviews = [{'title':'Daniel uribe'}];
