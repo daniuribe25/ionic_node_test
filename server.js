@@ -42,7 +42,7 @@ app.get('/prueba',function(req,res){
 // Routes
  
     // Get reviews
-     app.get('/reviews', function(req, res) {
+     app.get('/prueba2', function(req, res) {
  
         console.log("cargando..");
  		var reviews = [{'title':'Daniel uribe'}];
@@ -56,7 +56,7 @@ app.get('/prueba',function(req,res){
         //       reviews = rows;
         //       res.json(reviews);
         // });
-         return res.json(reviews);
+         res.json(reviews);
     });
  
     // create review and send back all reviews after creation
