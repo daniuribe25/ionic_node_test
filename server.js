@@ -56,7 +56,7 @@ app.get('/pruebaq',function(req,res){
         //       reviews = rows;
         //       res.json(reviews);
         // });
-	     res.sendFile('prueba.html');
+	   //  res.sendFile('prueba.html');
          //res.json(reviews);
     });
  
