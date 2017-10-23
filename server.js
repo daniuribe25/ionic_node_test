@@ -32,7 +32,7 @@ app.get('/',function(req,res){
     res.sendFile('index.html');
 });
 
-app.get('/prueba',function(req,res){
+app.get('/pruebaq',function(req,res){
     
         console.log('hello from server');
         res.sendFile('prueba.html');
@@ -42,7 +42,7 @@ app.get('/prueba',function(req,res){
 // Routes
  
     // Get reviews
-     app.get('/prueba2', function(req, res) {
+     app.get('/pruebaz', function(req, res) {
  
         console.log("cargando..");
  		var reviews = [{'title':'Daniel uribe'}];
