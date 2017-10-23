@@ -35,7 +35,7 @@ app.get('/',function(req,res){
 app.get('/pruebaq',function(req,res){
     
         console.log('hello from server');
-        res.sendFile('prueba.html');
+        res.sendFile('index.html');
     });
 
 
