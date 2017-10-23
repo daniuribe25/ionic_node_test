@@ -175,8 +175,9 @@ var AddReviewPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Reviews; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(179);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(629);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_appSettings__ = __webpack_require__(629);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(630);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -186,6 +187,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -200,7 +202,7 @@ var Reviews = (function () {
             return Promise.resolve(this.data);
         }
         return new Promise(function (resolve) {
-            _this.http.get('https://ionicnode-final.herokuapp.com/api/reviews')
+            _this.http.get(__WEBPACK_IMPORTED_MODULE_2__config_appSettings__["a" /* AppSettings */].ServerUrl + '/api/reviews')
                 .map(function (res) { return res.json(); })
                 .subscribe(function (data) {
                 alert(data);
@@ -213,13 +215,13 @@ var Reviews = (function () {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
         headers.append('Content-Type', 'application/json');
         console.log(review);
-        this.http.post('https://ionicnode-final.herokuapp.com/api/reviews', JSON.stringify(review), { headers: headers })
+        this.http.post(__WEBPACK_IMPORTED_MODULE_2__config_appSettings__["a" /* AppSettings */].ServerUrl + '/api/reviews', JSON.stringify(review), { headers: headers })
             .subscribe(function (res) {
             console.log(res.json());
         });
     };
     Reviews.prototype.deleteReview = function (reviewId) {
-        this.http.delete('https://ionicnode-final.herokuapp.com/api/reviews/' + reviewId).subscribe(function (res) {
+        this.http.delete(__WEBPACK_IMPORTED_MODULE_2__config_appSettings__["a" /* AppSettings */].ServerUrl + '/api/reviews' + reviewId).subscribe(function (res) {
             console.log('se ha eliminado el review ' + res.json());
         });
     };
@@ -468,7 +470,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_contact_contact__ = __webpack_require__(480);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(212);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_tabs_tabs__ = __webpack_require__(481);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_login_login__ = __webpack_require__(631);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_login_login__ = __webpack_require__(632);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_registro_registro__ = __webpack_require__(482);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__assets_resourses_res_es__ = __webpack_require__(213);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__models_User__ = __webpack_require__(483);
@@ -583,7 +585,22 @@ var MyApp = (function () {
 
 /***/ }),
 
-/***/ 631:
+/***/ 629:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppSettings; });
+var AppSettings = (function () {
+    function AppSettings() {
+    }
+    AppSettings.ServerUrl = 'https://ionicnode-final.herokuapp.com/';
+    return AppSettings;
+}());
+//# sourceMappingURL=appSettings.js.map
+
+/***/ }),
+
+/***/ 632:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
