@@ -27157,16 +27157,16 @@ ion-navbar.toolbar {
 }
 
 .ios add-review-page ion-item, .md add-review-page ion-item {
-  background-color: #74efc4 !important;
+  background-color: #ffffff !important;
 }
 
 .ios add-review-page ion-input, .ios add-review-page ion-select, .ios add-review-page ion-textarea, .md add-review-page ion-input, .md add-review-page ion-select, .md add-review-page ion-textarea {
-  background-color: #f2f2f2;
+  background-color: #ffdbdb;
   padding: 5px 10px;
 }
 
 .ios home-page ion-item, .md home-page ion-item {
-  background-color: #fff;
+  background-color: #86c5c2;
   border-bottom: none !important;
 }
 
