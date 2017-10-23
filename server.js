@@ -98,5 +98,5 @@ app.get('/pruebaq',function(req,res){
 // app.listen(server_port,function(){
 //     console.log("App listening on port 8080");
 // });
-app.listen(8080);
+app.listen(process.env.PORT || 5000);
 console.log("App listening on port 8080");
