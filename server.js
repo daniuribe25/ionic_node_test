@@ -32,13 +32,6 @@ app.get('/',function(req,res){
     res.sendFile('index.html');
 });
 
-app.get('/pruebaq',function(req,res){
-    
-        console.log('hello from server');
-        res.sendFile('index.html');
-    });
-
-
 // Routes
  
     // Get reviews
@@ -67,7 +60,7 @@ app.get('/pruebaq',function(req,res){
      app.post('/api/reviews', function(req, res) {
  
         console.log("creating review");
-        let sql = 'INSERT INTO review(title,description,rating) VALUES(?,?,?)';
+        var sql = 'INSERT INTO review(title,description,rating) VALUES(?,?,?)';
 
         db.run(sql, [req.body.title,req.body.description,req.body.rating], function(err) {
             if (err) {
