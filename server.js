@@ -44,7 +44,7 @@ app.get('/pruebaq',function(req,res){
     // Get reviews
      app.get('/pruebaz', function(req, res) {
 	     var reviews = [{'title':'Daniel uribe'}];
-	     res.json("");
+	     res.json(reviews);
     });
 
 	 app.get('/api/reviews', function(req, res) {
