@@ -200,7 +200,7 @@ var Reviews = (function () {
             return Promise.resolve(this.data);
         }
         return new Promise(function (resolve) {
-            _this.http.get('http://ec2-34-226-83-226.compute-1.amazonaws.com/reviews')
+            _this.http.get('http://ec2-34-226-83-226.compute-1.amazonaws.com/pruebaz')
                 .map(function (res) { return res.json(); })
                 .subscribe(function (data) {
                 _this.data = data;
