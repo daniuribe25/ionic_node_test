@@ -50,18 +50,17 @@ app.get('/pruebaq',function(req,res){
 	 app.get('/api/reviews', function(req, res) {
  
         console.log("cargando..");
- 		var reviews = [{'title':'Daniel uribe'}];
+ 		var reviews = [{'title':'Daniel uribe'},{'title':'Cantinflas londono'}];
 
 		 var sql = 'SELECT * FROM review ORDER BY title';
-
 		  db.all(sql, [], (err, rows) => {
-            if (err) {
+            		if (err) {
 			    throw err;
-              }
+              		}
               reviews = rows;
               res.json(reviews);
         });
-         res.json(reviews);
+         //res.json(reviews);
     });
  
    // // create review and send back all reviews after creation
