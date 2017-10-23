@@ -4277,7 +4277,7 @@ ion-alert input {
   border-style: solid;
   border-radius: 50%;
   border-color: #c8c7cc;
-  background-color: #74efc4;
+  background-color: #3a4250;
 }
 
 .alert-ios [aria-checked=true] .alert-checkbox-icon {
@@ -4295,7 +4295,7 @@ ion-alert input {
   border-top-width: 0;
   border-left-width: 0;
   border-style: solid;
-  border-color: #74efc4;
+  border-color: #3a4250;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
@@ -5209,19 +5209,19 @@ ion-footer {
 ion-app.ios {
   font-family: -apple-system, "Helvetica Neue", "Roboto", sans-serif;
   font-size: 1.4rem;
-  background-color: #74efc4;
+  background-color: #3a4250;
 }
 
 ion-app.md {
   font-family: "Roboto", "Helvetica Neue", sans-serif;
   font-size: 1.4rem;
-  background-color: #74efc4;
+  background-color: #3a4250;
 }
 
 ion-app.wp {
   font-family: "Segoe UI", "Noto Sans", sans-serif;
   font-size: 1.4rem;
-  background-color: #74efc4;
+  background-color: #3a4250;
 }
 
 ion-backdrop {
@@ -6594,7 +6594,7 @@ ion-card-content {
   width: calc(100% - 24px);
   border-radius: 2px;
   font-size: 1.4rem;
-  background: #74efc4;
+  background: #3a4250;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
@@ -7064,7 +7064,7 @@ ion-card-content {
   width: calc(100% - 20px);
   border-radius: 2px;
   font-size: 1.4rem;
-  background: #74efc4;
+  background: #3a4250;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
@@ -7574,7 +7574,7 @@ ion-card-content {
   width: calc(100% - 16px);
   border-radius: 1px;
   font-size: 1.4rem;
-  background: #74efc4;
+  background: #3a4250;
   -webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
@@ -8092,7 +8092,7 @@ ion-card-content {
   border-style: solid;
   border-radius: 50%;
   border-color: #c8c7cc;
-  background-color: #74efc4;
+  background-color: #3a4250;
 }
 
 .checkbox-ios .checkbox-checked {
@@ -8198,7 +8198,7 @@ ion-card-content {
   border-style: solid;
   border-radius: 2px;
   border-color: #787878;
-  background-color: #74efc4;
+  background-color: #3a4250;
   -webkit-transition-duration: 280ms;
   transition-duration: 280ms;
   -webkit-transition-property: background;
@@ -8314,7 +8314,7 @@ ion-card-content {
   border-style: solid;
   border-radius: 0;
   border-color: #333;
-  background-color: #74efc4;
+  background-color: #3a4250;
 }
 
 .checkbox-wp .checkbox-checked {
@@ -8703,7 +8703,7 @@ ion-app [no-margin] .scroll-content {
 
 .content-ios {
   color: #000;
-  background-color: #74efc4;
+  background-color: #3a4250;
 }
 
 .content-ios.outer-content {
@@ -8819,7 +8819,7 @@ ion-app.ios [margin-horizontal] .scroll-content {
 
 .content-md {
   color: #000;
-  background-color: #74efc4;
+  background-color: #3a4250;
 }
 
 .content-md hr {
@@ -8902,7 +8902,7 @@ ion-app.md [margin-horizontal] .scroll-content {
 
 .content-wp {
   color: #000;
-  background-color: #74efc4;
+  background-color: #3a4250;
 }
 
 .content-wp hr {
@@ -13812,7 +13812,7 @@ ion-item-sliding.active-swipe-left button[expandable] {
   border-radius: 0;
   font-size: 1.7rem;
   color: #000;
-  background-color: #74efc4;
+  background-color: #3a4250;
   -webkit-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
 }
@@ -14074,7 +14074,7 @@ ion-item-group .item-wrapper:last-child .item-ios .item-inner {
 }
 
 .list-ios ion-item-sliding {
-  background-color: #74efc4;
+  background-color: #3a4250;
 }
 
 .item-md {
@@ -14085,7 +14085,7 @@ ion-item-group .item-wrapper:last-child .item-ios .item-inner {
   font-weight: normal;
   text-transform: none;
   color: #000;
-  background-color: #74efc4;
+  background-color: #3a4250;
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -14336,7 +14336,7 @@ ion-item-group .item-md .item-wrapper:last-child .item-inner {
 }
 
 .list-md ion-item-sliding {
-  background-color: #74efc4;
+  background-color: #3a4250;
 }
 
 .item-md ion-reorder {
@@ -14352,7 +14352,7 @@ ion-item-group .item-md .item-wrapper:last-child .item-inner {
   font-weight: normal;
   text-transform: none;
   color: #000;
-  background-color: #74efc4;
+  background-color: #3a4250;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -14597,7 +14597,7 @@ ion-item-group .item-md .item-wrapper:last-child .item-inner {
 }
 
 .list-wp ion-item-sliding {
-  background-color: #74efc4;
+  background-color: #3a4250;
 }
 
 ion-label {
@@ -15036,7 +15036,7 @@ ion-list[inset] {
 }
 
 .list-ios[inset] ion-list-header {
-  background-color: #74efc4;
+  background-color: #3a4250;
 }
 
 .list-ios[inset] .item {
@@ -15192,7 +15192,7 @@ ion-list[inset] {
 }
 
 .list-md[inset] ion-list-header {
-  background-color: #74efc4;
+  background-color: #3a4250;
 }
 
 .list-md[no-lines] .item-block,
@@ -15333,7 +15333,7 @@ ion-list[inset] {
 }
 
 .list-wp[inset] ion-list-header {
-  background-color: #74efc4;
+  background-color: #3a4250;
 }
 
 .list-wp[no-lines] .item,
@@ -15607,7 +15607,7 @@ ion-menu[type=overlay] .show-backdrop {
 }
 
 .ios .menu-inner {
-  background: #74efc4;
+  background: #3a4250;
 }
 
 .ios .menu-content-reveal {
@@ -15626,7 +15626,7 @@ ion-menu[type=overlay] .show-backdrop {
 }
 
 .md .menu-inner {
-  background: #74efc4;
+  background: #3a4250;
 }
 
 .md .menu-content-reveal {
@@ -15960,7 +15960,7 @@ ion-picker-cmp {
 .picker-ios .picker-wrapper {
   height: 260px;
   border-top: 1px solid #c8c7cc;
-  background: #74efc4;
+  background: #3a4250;
 }
 
 .picker-ios .picker-toolbar {
@@ -15970,7 +15970,7 @@ ion-picker-cmp {
   display: flex;
   height: 44px;
   border-bottom: 0.55px solid #c8c7cc;
-  background: #74efc4;
+  background: #3a4250;
 }
 
 .picker-ios .picker-toolbar-button {
@@ -16050,8 +16050,8 @@ ion-picker-cmp {
   width: 100%;
   height: 81px;
   border-bottom: 1px solid #c8c7cc;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #74efc4), to(rgba(116, 239, 196, 0.7)));
-  background: linear-gradient(to bottom, #74efc4 20%, rgba(116, 239, 196, 0.7) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #3a4250), to(rgba(58, 66, 80, 0.7)));
+  background: linear-gradient(to bottom, #3a4250 20%, rgba(58, 66, 80, 0.7) 100%);
   -webkit-transform: translate3d(0, 0, 90px);
   transform: translate3d(0, 0, 90px);
 }
@@ -16065,8 +16065,8 @@ ion-picker-cmp {
   width: 100%;
   height: 119px;
   border-top: 1px solid #c8c7cc;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, #74efc4), to(rgba(116, 239, 196, 0.7)));
-  background: linear-gradient(to top, #74efc4 30%, rgba(116, 239, 196, 0.7) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, #3a4250), to(rgba(58, 66, 80, 0.7)));
+  background: linear-gradient(to top, #3a4250 30%, rgba(58, 66, 80, 0.7) 100%);
   -webkit-transform: translate3d(0, 0, 90px);
   transform: translate3d(0, 0, 90px);
 }
@@ -16074,7 +16074,7 @@ ion-picker-cmp {
 .picker-md .picker-wrapper {
   height: 260px;
   border-top: 0.55px solid #dedede;
-  background: #74efc4;
+  background: #3a4250;
 }
 
 .picker-md .picker-toolbar {
@@ -16087,7 +16087,7 @@ ion-picker-cmp {
   -ms-flex-pack: end;
   justify-content: flex-end;
   height: 44px;
-  background: #74efc4;
+  background: #3a4250;
 }
 
 .picker-md .picker-button,
@@ -16153,8 +16153,8 @@ ion-picker-cmp {
   width: 100%;
   height: 81px;
   border-bottom: 1px solid #dedede;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #74efc4), to(rgba(116, 239, 196, 0.7)));
-  background: linear-gradient(to bottom, #74efc4 20%, rgba(116, 239, 196, 0.7) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #3a4250), to(rgba(58, 66, 80, 0.7)));
+  background: linear-gradient(to bottom, #3a4250 20%, rgba(58, 66, 80, 0.7) 100%);
   -webkit-transform: translate3d(0, 0, 90px);
   transform: translate3d(0, 0, 90px);
 }
@@ -16167,8 +16167,8 @@ ion-picker-cmp {
   width: 100%;
   height: 119px;
   border-top: 1px solid #dedede;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, #74efc4), to(rgba(116, 239, 196, 0.7)));
-  background: linear-gradient(to top, #74efc4 30%, rgba(116, 239, 196, 0.7) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, #3a4250), to(rgba(58, 66, 80, 0.7)));
+  background: linear-gradient(to top, #3a4250 30%, rgba(58, 66, 80, 0.7) 100%);
   -webkit-transform: translate3d(0, 0, 90px);
   transform: translate3d(0, 0, 90px);
 }
@@ -16176,7 +16176,7 @@ ion-picker-cmp {
 .picker-wp .picker-wrapper {
   height: 260px;
   border-top: 0.55px solid transparent;
-  background: #74efc4;
+  background: #3a4250;
 }
 
 .picker-wp .picker-toolbar {
@@ -16190,7 +16190,7 @@ ion-picker-cmp {
   justify-content: flex-end;
   height: 44px;
   border-width: 0.55px;
-  background: #74efc4;
+  background: #3a4250;
 }
 
 .picker-wp .picker-toolbar-button {
@@ -16269,8 +16269,8 @@ ion-picker-cmp {
   width: 100%;
   height: 81px;
   border-bottom: 1px solid transparent;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #74efc4), to(rgba(116, 239, 196, 0.7)));
-  background: linear-gradient(to bottom, #74efc4 20%, rgba(116, 239, 196, 0.7) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #3a4250), to(rgba(58, 66, 80, 0.7)));
+  background: linear-gradient(to bottom, #3a4250 20%, rgba(58, 66, 80, 0.7) 100%);
   -webkit-transform: translate3d(0, 0, 90px);
   transform: translate3d(0, 0, 90px);
 }
@@ -16283,8 +16283,8 @@ ion-picker-cmp {
   width: 100%;
   height: 119px;
   border-top: 1px solid transparent;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, #74efc4), to(rgba(116, 239, 196, 0.7)));
-  background: linear-gradient(to top, #74efc4 30%, rgba(116, 239, 196, 0.7) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, #3a4250), to(rgba(58, 66, 80, 0.7)));
+  background: linear-gradient(to top, #3a4250 30%, rgba(58, 66, 80, 0.7) 100%);
   -webkit-transform: translate3d(0, 0, 90px);
   transform: translate3d(0, 0, 90px);
 }
@@ -16346,7 +16346,7 @@ ion-popover {
   max-height: 90%;
   border-radius: 10px;
   color: #000;
-  background: #74efc4;
+  background: #3a4250;
 }
 
 .popover-ios .popover-arrow {
@@ -16365,7 +16365,7 @@ ion-popover {
   width: 14px;
   height: 14px;
   border-radius: 3px;
-  background-color: #74efc4;
+  background-color: #3a4250;
   content: "";
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -16387,7 +16387,7 @@ ion-popover {
   max-height: 90%;
   border-radius: 2px;
   color: #000;
-  background: #74efc4;
+  background: #3a4250;
   -webkit-box-shadow: 0 3px 12px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0 3px 12px 2px rgba(0, 0, 0, 0.3);
   -webkit-transform-origin: top left;
@@ -16408,7 +16408,7 @@ ion-popover {
   border: 2px solid #ccc;
   border-radius: 0;
   color: #000;
-  background: #74efc4;
+  background: #3a4250;
   -webkit-transform-origin: top left;
   transform-origin: top left;
 }
@@ -17115,7 +17115,7 @@ ion-range ion-icon {
 
 .range-md .range-knob-min.range-knob-min .range-knob {
   border: 2px solid #bdbdbd;
-  background: #74efc4;
+  background: #3a4250;
 }
 
 .range-md .range-knob-min.range-knob-min .range-pin,
@@ -17137,7 +17137,7 @@ ion-range ion-icon {
 
 .range-md-primary .range-md .range-knob-min.range-knob-min .range-knob {
   border: 2px solid #bdbdbd;
-  background: #74efc4;
+  background: #3a4250;
 }
 
 .range-md-primary .range-md .range-knob-min.range-knob-min .range-pin,
@@ -17155,7 +17155,7 @@ ion-range ion-icon {
 
 .range-md-secondary .range-md .range-knob-min.range-knob-min .range-knob {
   border: 2px solid #bdbdbd;
-  background: #74efc4;
+  background: #3a4250;
 }
 
 .range-md-secondary .range-md .range-knob-min.range-knob-min .range-pin,
@@ -17173,7 +17173,7 @@ ion-range ion-icon {
 
 .range-md-danger .range-md .range-knob-min.range-knob-min .range-knob {
   border: 2px solid #bdbdbd;
-  background: #74efc4;
+  background: #3a4250;
 }
 
 .range-md-danger .range-md .range-knob-min.range-knob-min .range-pin,
@@ -17191,7 +17191,7 @@ ion-range ion-icon {
 
 .range-md-light .range-md .range-knob-min.range-knob-min .range-knob {
   border: 2px solid #bdbdbd;
-  background: #74efc4;
+  background: #3a4250;
 }
 
 .range-md-light .range-md .range-knob-min.range-knob-min .range-pin,
@@ -17209,7 +17209,7 @@ ion-range ion-icon {
 
 .range-md-dark .range-md .range-knob-min.range-knob-min .range-knob {
   border: 2px solid #bdbdbd;
-  background: #74efc4;
+  background: #3a4250;
 }
 
 .range-md-dark .range-md .range-knob-min.range-knob-min .range-pin,
@@ -17227,7 +17227,7 @@ ion-range ion-icon {
 
 .range-md-headerColor .range-md .range-knob-min.range-knob-min .range-knob {
   border: 2px solid #bdbdbd;
-  background: #74efc4;
+  background: #3a4250;
 }
 
 .range-md-headerColor .range-md .range-knob-min.range-knob-min .range-pin,
@@ -20747,7 +20747,7 @@ ion-toast {
   bottom: 2px;
   left: 2px;
   border-radius: 16px;
-  background-color: #74efc4;
+  background-color: #3a4250;
   content: "";
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
@@ -20764,7 +20764,7 @@ ion-toast {
   width: 28px;
   height: 28px;
   border-radius: 14px;
-  background-color: #74efc4;
+  background-color: #3a4250;
   -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.16), 0 3px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.16), 0 3px 1px rgba(0, 0, 0, 0.1);
   -webkit-transition: width 120ms ease-in-out 80ms, left 110ms ease-in-out 80ms, -webkit-transform 300ms;
@@ -20863,7 +20863,7 @@ ion-toast {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #74efc4;
+  background-color: #3a4250;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   -webkit-transition-duration: 300ms;
