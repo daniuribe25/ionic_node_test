@@ -205,7 +205,6 @@ var Reviews = (function () {
             _this.http.get(__WEBPACK_IMPORTED_MODULE_2__config_appSettings__["a" /* AppSettings */].ServerUrl + 'api/reviews')
                 .map(function (res) { return res.json(); })
                 .subscribe(function (data) {
-                alert(data);
                 _this.data = data;
                 resolve(_this.data);
             });
@@ -221,7 +220,7 @@ var Reviews = (function () {
         });
     };
     Reviews.prototype.deleteReview = function (reviewId) {
-        this.http.delete(__WEBPACK_IMPORTED_MODULE_2__config_appSettings__["a" /* AppSettings */].ServerUrl + 'api/reviews' + reviewId).subscribe(function (res) {
+        this.http.delete(__WEBPACK_IMPORTED_MODULE_2__config_appSettings__["a" /* AppSettings */].ServerUrl + 'api/reviews/' + reviewId).subscribe(function (res) {
             console.log('se ha eliminado el review ' + res.json());
         });
     };
